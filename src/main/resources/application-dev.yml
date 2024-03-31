@@ -1,0 +1,35 @@
+spring:
+  datasource:
+      url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/task}
+      username: ${DB_USERNAME:postgres}
+      password: ${DB_PASSWORD:root123}
+      driverClassName: org.postgresql.Driver
+
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update # change it to none in prod
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: false
+        enable_lazy_load_no_trans : true
+    database: postgresql
+
+  sql:
+    init:
+      mode: never
+  main:
+    allow-circular-references: true
+
+
+redis:
+  cache:
+    host: ${REDIS_HOST:localhost}
+    port: ${REDIS_PORT:6379}
+    caches:
+      categories: 15
+      products: 30
+      users: 30
+
+
