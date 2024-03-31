@@ -70,3 +70,5 @@ Change variables: SPRING_DATASOURCE_URL, DB_USERNAME, DB_PASSWORD, POSTGRES_USER
 username:worker, password:111
 username:manager, password:111
 
+DOCKER IMAGE : leozukich/spring-boot-docker
+
