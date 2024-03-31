@@ -5,6 +5,7 @@ spring:
       password: ${DB_PASSWORD:root123}
       driverClassName: org.postgresql.Driver
 
+
   jpa:
     generate-ddl: true
     hibernate:
